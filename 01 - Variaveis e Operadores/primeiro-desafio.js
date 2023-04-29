@@ -15,6 +15,7 @@ let distanciaViagem = 100;
 
 calcular(precoCombustivel, kmPorLitro, distanciaViagem);
 
-function calcular(precoCombustivel,kmPorLitro,distanciaViagem) { 
-    console.log((distanciaViagem / kmPorLitro) * precoCombustivel);
+function calcular(precoCombustivel, kmPorLitro, distanciaViagem) { 
+    let valorGasto = (distanciaViagem / kmPorLitro) * precoCombustivel;
+    console.log(valorGasto.toFixed(2));
 }
