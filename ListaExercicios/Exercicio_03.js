@@ -10,20 +10,20 @@ Código Condição de pagamento:
 - Acima de duas vezes, preço normal de etiqueta mais juros de 10%;
 */
 
-let condicaoPagamento = 'parcelado'; //vista ou parcelado
-let formaPagamento = 'pix'; //debito, dinheiro ou pix
+let condicaoPagamento = 2; //vista = 1, parcelado = 2
+let formaPagamento = 2; //debito = 1, dinheiro = 2, pix = 3
 let parcelamento = 3; //quantidade de parcelas
-let precoEtiqueta = 122.2;
+let precoEtiqueta = 100;
 
-if (condicaoPagamento === 'vista') {
-    if (formaPagamento === 'debito') {
+if (condicaoPagamento === 1) {
+    if (formaPagamento === 1) {
         console.log('Preco a pagar:\n' + (precoEtiqueta - (precoEtiqueta * 0.1)).toFixed(2));
-    } else if (formaPagamento === 'dinheiro' || formaPagamento === 'pix') {
+    } else if (formaPagamento === 2 || formaPagamento === 3) {
         console.log('Preco a pagar:\n' + (precoEtiqueta - (precoEtiqueta * 0.15)).toFixed(2));
     } else {
         console.log('Forma de pagamento a vista invalido');
     }
-} else if (condicaoPagamento === 'parcelado') {
+} else if (condicaoPagamento === 2) {
     if (parcelamento === 2) {
         console.log('Preco a pagar:\n' + precoEtiqueta)
     }
