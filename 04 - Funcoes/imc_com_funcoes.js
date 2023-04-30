@@ -15,15 +15,14 @@ IMC em adultos Condição:
 - Acima de 40 Obsesidade Grave;
 */
 
-function main() {
+(function () {
     const peso = 94;
     const altura = 2.05;
 
     const imc = calculaImc(peso, altura);
     console.log(classificaImc(imc));
-}
+})();
 
-main();
 
 function calculaImc(peso, altura) {
     return peso / Math.pow(altura,2);
