@@ -1,0 +1,1 @@
+const { sets,gets } = require('./funcoes-auxiliares');

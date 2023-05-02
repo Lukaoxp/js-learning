@@ -1,2 +1,2 @@
 # js-learning
-Repository for learning node.js
+Learning node.js repository
